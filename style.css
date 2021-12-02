@@ -1,0 +1,215 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding:0;
+    background-color: #f4f4f4;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.content{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(101, 113, 126);
+    color: seashell;
+    min-height: 70px;
+    padding-top: 20px;
+    border-bottom: 3px solid orangered;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+
+}
+header a{
+    color: rgb(250, 115, 66);
+    text-decoration: none;
+    font-size: 18px;
+}
+#home a{
+    color: seashell;
+}
+#home a:hover{
+    color:rgb(250, 115, 66) ;
+}
+header .head{
+    float: left;
+}
+header .head h1{
+    margin: 0;
+}
+header .navbar{
+    float: right;
+    margin-top: 10px;
+
+}
+header a:hover{
+    color: rgb(240, 212, 212);
+}
+.show{
+    min-height: 450px;
+    background: url("https://www.wallpapertip.com/wmimgs/68-682070_working-on-laptop-background.png") no-repeat 0 -300px ;
+    text-align: center;
+    color: orangered;
+
+}
+.show h2{
+    margin-top: 180px;
+    font-size: 40px;
+}
+.show p{
+    font-size: 20px;
+}
+.suscribe{
+    background-color: rgb(97, 105, 114);
+    color: white;
+    padding: 15px;
+}
+.suscribe h1{
+    float: left;
+}
+.suscribe form{
+    float: right;
+    margin-top: 15px;
+}
+.suscribe input{
+    height: 22px;
+    width: 240px;
+    padding: 4px;
+}
+.btn{
+    height: 38px;
+    background-color: orangered;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.boxes{
+    margin-top: 30px;
+}
+.box{
+    width: 33.3%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+.box img{
+    width: 90px;
+    height: auto;
+}
+.mainfooter{
+    background-color:orangered ;
+    color:seashell ;
+    margin-top: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+/*about page*/
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main article {
+    width: 60%;
+    float: left;
+    padding: 5px;
+    margin-top: 10px;
+    color: orangered;
+
+}
+
+.main article p{
+    font-size: 16px;
+}
+.main aside{
+    width: 30%;
+    float: right;
+    margin-top: 30px;
+    background-color: rgb(101, 110, 119);
+    padding: 5px;
+}
+.main aside p{
+    font-size: 16px;
+    color: seashell;
+}
+.main aside h1{
+    font-size: 20px;
+    color: seashell;
+}
+/*contact page*/
+
+.service li{
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 10px;
+}
+.formsheet button{
+   margin-left:50px;
+}
+.formsheet  h1{
+    text-align: center;
+}
+.formsheet #sheet{
+    padding-left: 20px;
+}
+.formsheet #sheet label{
+    font-size: 18px;
+    color: orangered;
+}
+.formsheet #sheet input ,.formsheet #sheet textarea{
+    width: 80%;
+    padding: 5px;
+}
+
+
+/*responsive*/
+@media(max-width:780px){
+    header .head,.navbar,.show,.suscribe h1,.suscribe form,.boxes,.box,.main article,.main aside,.service,.formsheet{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .head{
+        border-bottom: 2px solid gray;
+    }
+    header{
+        padding-bottom: 10px;
+    }
+    .suscribe .btn{
+        display: block;
+        width: 100%;
+    }
+    .suscribe form input,.formsheet input,.formsheet textarea{
+        width: 100%;
+        margin-bottom:5px ;
+    }
+   
+    .main article p,.main aside p{
+        font-size: 15px;
+    }
+    .formsheet #sheet{
+        padding-left: 10px;
+    }
+    .formsheet button{
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    .formsheet #sheet{
+        padding:0 ;
+    }
+}
